@@ -11,16 +11,32 @@ public class DeerMovement : MonoBehaviour
     //private Vector3 targetPos = new Vector3();
     private float currentDistTraveled; //used to determine how much of each player move is left to make
 
+
     // Start is called before the first frame update
     void Start()
     {
-        
     }
-
     // Update is called once per frame
     void Update()
     {
-        if (currentMove == new Vector3()) { //currently not moving
+            if (Input.GetKeyDown(KeyCode.D))
+            {
+                transform.position = new Vector3(transform.position.x + 1, transform.position.y);
+            }
+            else if (Input.GetKeyDown(KeyCode.A))
+        {
+                transform.position = new Vector3(transform.position.x - 1, transform.position.y);
+            }
+            else if (Input.GetKeyDown(KeyCode.S))
+        {
+                transform.position = new Vector3(transform.position.x, transform.position.y - 1);
+            }
+            else if (Input.GetKeyDown(KeyCode.W))
+        {
+                transform.position = new Vector3(transform.position.x, transform.position.y + 1);
+            }
+       
+        /*if (currentMove == new Vector3()) { //currently not moving
             if (Input.GetAxisRaw("Horizontal") > 0.5f)
             {
                 currentMove = new Vector3(1, 0);
@@ -40,18 +56,17 @@ public class DeerMovement : MonoBehaviour
             //targetPos = transform.position + new Vector3(currentMove.x * gridSquareSize, currentMove.y * gridSquareSize);
             currentDistTraveled = 0f;
 
-        }
         else //currently moving
         {
             transform.position += new Vector3(currentMove.x * gridSquareSize, currentMove.y * gridSquareSize);
-            /*
+            
             if (currentDistTraveled < gridSquareSize)
             {
                 transform.position = transform.position + new Vector3(currentMove.x * gridSquareSize * Time.deltaTime * moveSpeed, currentMove.y * gridSquareSize * Time.deltaTime * moveSpeed);
                 currentDistTraveled = currentDistTraveled + gridSquareSize * Time.deltaTime * moveSpeed;
             }
             if(currentDistTraveled>)
-                */
-        }
+                
+        }*/
     }
 }
