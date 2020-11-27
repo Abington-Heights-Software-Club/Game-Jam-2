@@ -43,7 +43,7 @@ public class DeerMovement : MonoBehaviour
         }
         if(movedPosition != new Vector3(0, 0))
         {
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, moveDirection, 1);
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, moveDirection, 1, LayerMask.GetMask("Wall"));
             if(hit.collider == null)
             {
                 transform.position = movedPosition;
