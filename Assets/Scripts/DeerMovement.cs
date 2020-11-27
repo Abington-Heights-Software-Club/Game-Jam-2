@@ -19,23 +19,37 @@ public class DeerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-            if (Input.GetKeyDown(KeyCode.D))
+        Vector3 movedPosition = new Vector3(0, 0);
+        Vector2 moveDirection = new Vector2(0, 0);
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            movedPosition = new Vector3(transform.position.x + 1, transform.position.y);
+            moveDirection = Vector2.right;
+        }
+        else if (Input.GetKeyDown(KeyCode.A))
+        {
+            movedPosition = new Vector3(transform.position.x - 1, transform.position.y);
+            moveDirection = Vector2.left;
+        }
+        else if (Input.GetKeyDown(KeyCode.S))
+        {
+            movedPosition = new Vector3(transform.position.x, transform.position.y - 1);
+            moveDirection = Vector2.down;
+        }
+        else if (Input.GetKeyDown(KeyCode.W))
+        {
+            movedPosition = new Vector3(transform.position.x, transform.position.y + 1);
+            moveDirection = Vector2.up;
+        }
+        if(movedPosition != new Vector3(0, 0))
+        {
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, moveDirection, 1);
+            if(hit.collider == null)
             {
-                transform.position = new Vector3(transform.position.x + 1, transform.position.y);
+                transform.position = movedPosition;
             }
-            else if (Input.GetKeyDown(KeyCode.A))
-        {
-                transform.position = new Vector3(transform.position.x - 1, transform.position.y);
-            }
-            else if (Input.GetKeyDown(KeyCode.S))
-        {
-                transform.position = new Vector3(transform.position.x, transform.position.y - 1);
-            }
-            else if (Input.GetKeyDown(KeyCode.W))
-        {
-                transform.position = new Vector3(transform.position.x, transform.position.y + 1);
-            }
-       
+        }
+
         /*if (currentMove == new Vector3()) { //currently not moving
             if (Input.GetAxisRaw("Horizontal") > 0.5f)
             {
