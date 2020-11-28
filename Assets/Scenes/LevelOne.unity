@@ -231,6 +231,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d6289bf70125414b80ec0715e90b762, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!50 &493938979 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 3114800905522901083, guid: d6a5823ba31c84b48a780b9b43442d7a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1791209479510163303}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -442,9 +448,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 435641194}
-  speed: 200
   nextWaypointDistance: 1
-  rb: {fileID: 0}
+  rb: {fileID: 493938979}
 --- !u!114 &820931655
 MonoBehaviour:
   m_ObjectHideFlags: 0
