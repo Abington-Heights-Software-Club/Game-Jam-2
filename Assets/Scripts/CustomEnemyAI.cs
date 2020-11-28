@@ -8,7 +8,7 @@ public class CustomEnemyAI : MonoBehaviour
     public Transform target;
     public float speed = 200f;
     public float nextWaypointDistance = 3f;
-    public Rigidbody2D rb;
+    private Rigidbody2D rb;
 
     private Vector3 currentMove = new Vector3();
 
@@ -23,9 +23,6 @@ public class CustomEnemyAI : MonoBehaviour
     {
         seeker = GetComponent<Seeker>();
         rb= GetComponent<Rigidbody2D>();    
-
-
-
     }
     void Update(){
     if (Input.GetKeyDown(KeyCode.W))
@@ -47,8 +44,6 @@ public class CustomEnemyAI : MonoBehaviour
     void moveEnemy()
     {
         seeker.StartPath(rb.position, target.position, OnPathComplete);
-        Vector3 movedPosition = new Vector3(0, 0);
-        Vector2 moveDirection = new Vector2(0, 0);
 
         if (path ==null)
             return;
@@ -60,17 +55,12 @@ public class CustomEnemyAI : MonoBehaviour
         else{
             reachedEndOfPath = false;
         }
-        Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] -rb.position).normalized;
-        if(direction[1] > 0){
-            movedPosition = new Vector3(transform.position.x, transform.position.y + 1);
-            moveDirection = Vector2.up;
+        Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
+        Debug.Log(direction.y);
+        if(direction.y > 0){
+            transform.position = new Vector3(transform.position.x, transform.position.y + 1);
             Debug.Log("HEllo");
         }
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, moveDirection, 1, LayerMask.GetMask("Wall"));
-        if(hit.collider == null)
-            {
-                transform.position = movedPosition;
-            }
         
 
         float distance = Vector2.Distance(rb.position, path.vectorPath[currentWaypoint]);
