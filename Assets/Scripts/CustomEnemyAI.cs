@@ -8,6 +8,7 @@ public class CustomEnemyAI : MonoBehaviour
 <<<<<<< HEAD
         
 <<<<<<< HEAD
+<<<<<<< HEAD
     public Transform target;
     public float speed = 200f;
     public float nextWaypointDistance = 3f;
@@ -21,10 +22,15 @@ public class CustomEnemyAI : MonoBehaviour
     private Vector3 currentMove = new Vector3();
 >>>>>>> d873e4d20001b41d3c806a382522c2d0e34ef9d3
 =======
+=======
+>>>>>>> parent of 90c7419... FixedPathfinder
 //     public Transform target;
 //     public float speed = 200f;
 //     public float nextWaypointDistance = 3f;
 //     public Rigidbody2D rb;
+<<<<<<< HEAD
+>>>>>>> parent of 90c7419... FixedPathfinder
+=======
 >>>>>>> parent of 90c7419... FixedPathfinder
 
 //     Path path;
@@ -34,6 +40,7 @@ public class CustomEnemyAI : MonoBehaviour
 //     Seeker seeker;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     // Start is called before the first frame update
     void Start()
     {
@@ -41,11 +48,16 @@ public class CustomEnemyAI : MonoBehaviour
         rb= GetComponent<Rigidbody2D>();    
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 90c7419... FixedPathfinder
 //     // Start is called before the first frame update
 //     void Start()
 //     {
 //         seeker = GetComponent<Seeker>();
 //         rb= GetComponent<Rigidbody2D>();    
+<<<<<<< HEAD
+>>>>>>> parent of 90c7419... FixedPathfinder
+=======
 >>>>>>> parent of 90c7419... FixedPathfinder
 
 
@@ -54,6 +66,7 @@ public class CustomEnemyAI : MonoBehaviour
 
 //     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     void UpdatePath(){
         seeker.StartPath(rb.position, target.position, OnPathComplete);
@@ -117,11 +130,29 @@ public class CustomEnemyAI : MonoBehaviour
         //     transform.position = movePosition;
         // }
 =======
+=======
+//     void UpdatePath(){
+//         seeker.StartPath(rb.position, target.position, OnPathComplete);
+//     }
+
+//     void OnPathComplete(Path p){
+//         if (!p.error){
+//             path = p;
+//             currentWaypoint = 0;
+//         }
+
+//         }
+    
+
+>>>>>>> parent of 90c7419... FixedPathfinder
 //     // Update is called once per frame
 //     void Update()
 //     {
 //         if (path ==null)
 //             return;
+<<<<<<< HEAD
+>>>>>>> parent of 90c7419... FixedPathfinder
+=======
 >>>>>>> parent of 90c7419... FixedPathfinder
 
 //         if(currentWaypoint >= path.vectorPath.Count){
@@ -132,6 +163,7 @@ public class CustomEnemyAI : MonoBehaviour
 //             reachedEndOfPath = false;
 //         }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     void Update() {
         
@@ -152,6 +184,8 @@ public class CustomEnemyAI : MonoBehaviour
     }
 }
 =======
+=======
+>>>>>>> parent of 90c7419... FixedPathfinder
 //         Vector2 direction = direction = ((Vector2)path.vectorPath[currentWaypoint] -rb.position),normalized;
 //         Debug.Log(direction);
 //         Vector2 force = direction * speed * Time.deltaTime;
@@ -165,5 +199,9 @@ public class CustomEnemyAI : MonoBehaviour
 //     }
 // }
 
+<<<<<<< HEAD
+}
+>>>>>>> parent of 90c7419... FixedPathfinder
+=======
 }
 >>>>>>> parent of 90c7419... FixedPathfinder
