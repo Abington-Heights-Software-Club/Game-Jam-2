@@ -17,7 +17,7 @@ public class CustomEnemyAI : MonoBehaviour
     public Transform target;
     public float speed = 200f;
     public float nextWaypointDistance = 3f;
-    private Rigidbody2D rb;
+    public Rigidbody2D rb;
 
     private Vector3 currentMove = new Vector3();
 >>>>>>> d873e4d20001b41d3c806a382522c2d0e34ef9d3
@@ -47,6 +47,7 @@ public class CustomEnemyAI : MonoBehaviour
         seeker = GetComponent<Seeker>();
         rb= GetComponent<Rigidbody2D>();    
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> parent of 90c7419... FixedPathfinder
@@ -72,6 +73,11 @@ public class CustomEnemyAI : MonoBehaviour
         seeker.StartPath(rb.position, target.position, OnPathComplete);
     }
 =======
+=======
+
+
+
+>>>>>>> parent of c2c64eb... Cleaned Up CustomEnemyAI
     }
     void Update(){
     if (Input.GetKeyDown(KeyCode.W))
@@ -105,6 +111,8 @@ public class CustomEnemyAI : MonoBehaviour
     void moveEnemy()
     {
         seeker.StartPath(rb.position, target.position, OnPathComplete);
+        Vector3 movedPosition = new Vector3(0, 0);
+        Vector2 moveDirection = new Vector2(0, 0);
 
 >>>>>>> d873e4d20001b41d3c806a382522c2d0e34ef9d3
         if (path ==null)
@@ -117,6 +125,7 @@ public class CustomEnemyAI : MonoBehaviour
         else{
             reachedEndOfPath = false;
         }
+<<<<<<< HEAD
 <<<<<<< HEAD
 
         Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] -rb.position),normalized;
@@ -172,8 +181,19 @@ public class CustomEnemyAI : MonoBehaviour
         Debug.Log(direction.y);
         if(direction.y > 0){
             transform.position = new Vector3(transform.position.x, transform.position.y + 1);
+=======
+        Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] -rb.position).normalized;
+        if(direction[1] > 0){
+            movedPosition = new Vector3(transform.position.x, transform.position.y + 1);
+            moveDirection = Vector2.up;
+>>>>>>> parent of c2c64eb... Cleaned Up CustomEnemyAI
             Debug.Log("HEllo");
         }
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, moveDirection, 1, LayerMask.GetMask("Wall"));
+        if(hit.collider == null)
+            {
+                transform.position = movedPosition;
+            }
         
 
         float distance = Vector2.Distance(rb.position, path.vectorPath[currentWaypoint]);
