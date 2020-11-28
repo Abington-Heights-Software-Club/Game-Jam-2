@@ -1,13 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Pathfinding;
 
 public class DeerMovement : MonoBehaviour
 {
     public static float gridSquareSize = 1;
     public static float moveSpeed = 0.5f;
-    public AIDestinationSetter AIDestinationSetter;
 
     private Vector3 currentMove = new Vector3();
     //private Vector3 targetPos = new Vector3();
@@ -50,7 +48,6 @@ public class DeerMovement : MonoBehaviour
             {
                 transform.position = movedPosition;
             }
-            AIDestinationSetter.enemyMove();
         }
 
         /*if (currentMove == new Vector3()) { //currently not moving
