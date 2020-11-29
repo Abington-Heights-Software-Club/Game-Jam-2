@@ -9,7 +9,10 @@ public class DeerMovement : MonoBehaviour
     public static float moveSpeed = 0.5f;
     public AIDestinationSetter AIDestinationSetter;
 
+    public Transform castPoint;
+    private bool isInAgro = false;
     private Vector3 currentMove = new Vector3();
+    private float agroRange = 3;
     //private Vector3 targetPos = new Vector3();
     private float currentDistTraveled; //used to determine how much of each player move is left to make
 
@@ -50,7 +53,13 @@ public class DeerMovement : MonoBehaviour
             {
                 transform.position = movedPosition;
             }
-            AIDestinationSetter.enemyMove();
+            // AIDestinationSetter.enemyMove();
+            if (canSeePlayer(agroRange)){
+                isInAgro =true;
+            }
+            if(isInAgro){
+                AIDestinationSetter.enemyMove();
+            }
         }
 
         /*if (currentMove == new Vector3()) { //currently not moving
@@ -86,4 +95,27 @@ public class DeerMovement : MonoBehaviour
                 
         }*/
     }
+    bool canSeePlayer(float distance){
+        bool val = false;
+        float castDist = distance;
+        //calculates end position
+        Vector2 endPosition = castPoint.position + Vector3.right * distance;
+        //action is player space can include walls 
+        RaycastHit2D hit = Physics2D.Linecast(castPoint.position, endPosition);
+        //if it hits anything
+        if(hit.collider !=null){
+            //if what it hits is player
+            if(hit.collider.gameObject.CompareTag("Player")){
+                //switch on agro mode
+                val = true;
+            }
+            else{
+                //not agro
+                val = false;
+            }
+
+        }
+        return val;
+    }
+
 }
