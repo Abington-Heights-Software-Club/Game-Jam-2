@@ -44,7 +44,7 @@ namespace Pathfinding {
         }
 
         public void OnPathComplete (Path p) {
-            float movementAmount = 0.2f;
+            float movementAmount = 1f;
             Vector3 direction = p.vectorPath[1] - p.vectorPath[0];
             if(Mathf.Abs(direction.x) > Mathf.Abs(direction.y)) {
                 //Move on the x Axis
