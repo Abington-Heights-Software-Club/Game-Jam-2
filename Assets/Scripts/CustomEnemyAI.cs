@@ -1,16 +1,15 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
 
 public class CustomEnemyAI : MonoBehaviour
 {
+        
     public Transform target;
     public float speed = 200f;
     public float nextWaypointDistance = 3f;
-    private Rigidbody2D rb;
-
-    private Vector3 currentMove = new Vector3();
+    public Rigidbody2D rb;
 
     Path path;
     int currentWaypoint =0;
@@ -23,13 +22,16 @@ public class CustomEnemyAI : MonoBehaviour
     {
         seeker = GetComponent<Seeker>();
         rb= GetComponent<Rigidbody2D>();    
+
+
+        //this is key with timing with player
+        InvokeRepeating("UpdatePath", 0f,.5f);
+
     }
-    void Update(){
-    if (Input.GetKeyDown(KeyCode.W))
-        {
-            moveEnemy();
-        }
-}
+
+    void UpdatePath(){
+        seeker.StartPath(rb.position, target.position, OnPathComplete);
+    }
 
     void OnPathComplete(Path p){
         if (!p.error){
@@ -41,10 +43,9 @@ public class CustomEnemyAI : MonoBehaviour
     
 
     // Update is called once per frame
-    void moveEnemy()
+    public void enemyMove()
     {
-        seeker.StartPath(rb.position, target.position, OnPathComplete);
-
+        //Vector3 movePosition = new Vector3(0, 0);
         if (path ==null)
             return;
 
@@ -55,17 +56,22 @@ public class CustomEnemyAI : MonoBehaviour
         else{
             reachedEndOfPath = false;
         }
-        Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
-        Debug.Log(direction.y);
-        if(direction.y > 0){
-            transform.position = new Vector3(transform.position.x, transform.position.y + 1);
-            Debug.Log("HEllo");
-        }
-        
 
+        Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] -rb.position),normalized;
         float distance = Vector2.Distance(rb.position, path.vectorPath[currentWaypoint]);
         if(distance < nextWaypointDistance){
             currentWaypoint++;
         }
+        Debug.Log(direction);
+        // if(Input.GetKeyDown(KeyCode.W)) {
+        //     movePosition = new Vector3(transform.position.x + 1, transform.position.y);
+        //     transform.position = movePosition;
+        // }
+
+        
+    }
+
+    void Update() {
+        
     }
 }
