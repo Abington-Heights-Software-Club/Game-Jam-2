@@ -1,7 +1,49 @@
 fileFormatVersion: 2
 guid: 074fab3a55f443445b8d010b29a8e5b1
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -3264205337392281595
+    second: DeerWalk_0
+  - first:
+      213: -8944647699464097153
+    second: DeerWalk_1
+  - first:
+      213: -8066042513856826268
+    second: DeerWalk_2
+  - first:
+      213: 1460896245733890568
+    second: DeerWalk_3
+  - first:
+      213: -8865101299829000674
+    second: DeerWalk_4
+  - first:
+      213: -8463525085109177781
+    second: DeerWalk_5
+  - first:
+      213: 7700980304359894898
+    second: DeerWalk_6
+  - first:
+      213: 3324750414171824787
+    second: DeerWalk_7
+  - first:
+      213: 1832724475050109424
+    second: DeerWalk_8
+  - first:
+      213: -8905196393562278689
+    second: DeerWalk_9
+  - first:
+      213: 9201623074071709823
+    second: DeerWalk_10
+  - first:
+      213: -1511266489743686760
+    second: DeerWalk_11
+  - first:
+      213: 5529639793941670026
+    second: DeerWalk_12
+  - first:
+      213: 553039344002501065
+    second: DeerWalk_13
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -31,7 +73,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -40,12 +82,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -64,7 +106,19 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -73,7 +127,280 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: DeerWalk_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 209
+        width: 35
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5088cc64a8633b2d0800000000000000
+      internalID: -3264205337392281595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeerWalk_1
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 209
+        width: 35
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f727d60ee4a3ed380800000000000000
+      internalID: -8944647699464097153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeerWalk_2
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 209
+        width: 35
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4647d52c119af0090800000000000000
+      internalID: -8066042513856826268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeerWalk_3
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 209
+        width: 35
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80a9ba43565264410800000000000000
+      internalID: 1460896245733890568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeerWalk_4
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 145
+        width: 35
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e16b6dd4655d8f480800000000000000
+      internalID: -8865101299829000674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeerWalk_5
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 145
+        width: 35
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b42b57ad6c48b8a80800000000000000
+      internalID: -8463525085109177781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeerWalk_6
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 145
+        width: 35
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27fa6a709c06fda60800000000000000
+      internalID: 7700980304359894898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeerWalk_7
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 145
+        width: 35
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3926b8be2e2e32e20800000000000000
+      internalID: 3324750414171824787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeerWalk_8
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 81
+        width: 35
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f9a68a23352f6910800000000000000
+      internalID: 1832724475050109424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeerWalk_9
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 81
+        width: 35
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd471a2df036a6480800000000000000
+      internalID: -8905196393562278689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeerWalk_10
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 81
+        width: 35
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f78051ffe6bb2bf70800000000000000
+      internalID: 9201623074071709823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeerWalk_11
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 81
+        width: 35
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89340e57227e60be0800000000000000
+      internalID: -1511266489743686760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeerWalk_12
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 17
+        width: 35
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a88e1c5681a3dbc40800000000000000
+      internalID: 5529639793941670026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
