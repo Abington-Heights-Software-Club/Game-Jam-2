@@ -46,7 +46,7 @@ namespace Pathfinding {
         public void OnPathComplete (Path p) {
             float movementAmount = 1f;
             Vector3 direction = p.vectorPath[1] - p.vectorPath[0];
-            if(Mathf.Abs(direction.x) > Mathf.Abs(direction.y)) {
+            if(ai.position != target.position && Mathf.Abs(direction.x) > Mathf.Abs(direction.y)) {
                 //Move on the x Axis
                 if(direction.x >= 0) {
                     //Move Right
@@ -55,7 +55,7 @@ namespace Pathfinding {
                     //Move Left
                     transform.position = new Vector3(transform.position.x - movementAmount, transform.position.y);
                 }
-            } else {
+            } else if(ai.position != target.position){
                 //Move on the y axis
                 if(direction.y >= 0) {
                     //Move Right
