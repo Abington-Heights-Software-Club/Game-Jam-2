@@ -8,6 +8,9 @@ public class DeerMovement : MonoBehaviour
     public static float gridSquareSize = 1;
     public static float moveSpeed = 0.5f;
     public AIDestinationSetter AIDestinationSetter;
+    private bool isWaiting = false;
+    private bool isWaitingTimerOn = false;
+    private Animator anim;
 
     public Transform castPoint;
     private bool isInAgro = false;
@@ -20,6 +23,7 @@ public class DeerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        anim = GetComponent<Animator>();
     }
     // Update is called once per frame
     void Update()
@@ -30,23 +34,38 @@ public class DeerMovement : MonoBehaviour
         {
             movedPosition = new Vector3(transform.position.x + 1, transform.position.y);
             moveDirection = Vector2.right;
+            anim.SetBool("isRunning", true);
+            isWaiting = false;
         }
         else if (Input.GetKeyDown(KeyCode.A))
         {
             movedPosition = new Vector3(transform.position.x - 1, transform.position.y);
             moveDirection = Vector2.left;
+            isWaiting = false;
+            anim.SetBool("isRunning", true);
         }
         else if (Input.GetKeyDown(KeyCode.S))
         {
             movedPosition = new Vector3(transform.position.x, transform.position.y - 1);
             moveDirection = Vector2.down;
+            isWaiting = false;
+            anim.SetBool("isRunning", true);
         }
         else if (Input.GetKeyDown(KeyCode.W))
         {
             movedPosition = new Vector3(transform.position.x, transform.position.y + 1);
             moveDirection = Vector2.up;
+            isWaiting = false;
+            anim.SetBool("isRunning", true);
         }
-        if(movedPosition != new Vector3(0, 0))
+        else if (!isWaitingTimerOn)
+        {
+            isWaitingTimerOn = true;
+            isWaiting = true;
+            anim.SetBool("isRunning", false);
+            StartCoroutine(idleWait());
+        }
+        if (movedPosition != new Vector3(0, 0))
         {
             RaycastHit2D hit = Physics2D.Raycast(transform.position, moveDirection, 1, LayerMask.GetMask("Wall"));
             if(hit.collider == null)
@@ -61,39 +80,21 @@ public class DeerMovement : MonoBehaviour
                 AIDestinationSetter.enemyMove();
             }
         }
-
-        /*if (currentMove == new Vector3()) { //currently not moving
-            if (Input.GetAxisRaw("Horizontal") > 0.5f)
-            {
-                currentMove = new Vector3(1, 0);
-            }
-            else if (Input.GetAxisRaw("Horizontal") < -0.5f)
-            {
-                currentMove = new Vector3(-1, 0);
-            }
-            else if (Input.GetAxisRaw("Vertical") > 0.5f)
-            {
-                currentMove = new Vector3(1, 0);
-            }
-            else if (Input.GetAxisRaw("Vertical") < -0.5f)
-            {
-                currentMove = new Vector3(-1, 0);
-            }
-            //targetPos = transform.position + new Vector3(currentMove.x * gridSquareSize, currentMove.y * gridSquareSize);
-            currentDistTraveled = 0f;
-
-        else //currently moving
+        IEnumerator idleWait()
         {
-            transform.position += new Vector3(currentMove.x * gridSquareSize, currentMove.y * gridSquareSize);
-            
-            if (currentDistTraveled < gridSquareSize)
+            int count = 0;
+            while (isWaiting)
             {
-                transform.position = transform.position + new Vector3(currentMove.x * gridSquareSize * Time.deltaTime * moveSpeed, currentMove.y * gridSquareSize * Time.deltaTime * moveSpeed);
-                currentDistTraveled = currentDistTraveled + gridSquareSize * Time.deltaTime * moveSpeed;
+                yield return new WaitForSeconds(1);
+                count++;
+                Debug.Log("Time: " + count);
+                if (count == 9)
+                {
+                    anim.SetTrigger("isWaitingLong");
+                }
             }
-            if(currentDistTraveled>)
-                
-        }*/
+            isWaitingTimerOn = false;
+        }
     }
     bool canSeePlayer(float distance){
         bool val = false;
