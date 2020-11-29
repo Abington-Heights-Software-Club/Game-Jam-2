@@ -96,12 +96,12 @@ TextureImporter:
       name: Deer Idle (Bopping)_0
       rect:
         serializedVersion: 2
-        x: 195
-        y: 973
-        width: 432
-        height: 372
+        x: 17
+        y: 81
+        width: 35
+        height: 31
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -117,12 +117,12 @@ TextureImporter:
       name: Deer Idle (Bopping)_1
       rect:
         serializedVersion: 2
-        x: 195
-        y: 201
-        width: 432
-        height: 372
+        x: 17
+        y: 17
+        width: 35
+        height: 31
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

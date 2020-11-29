@@ -5,8 +5,7 @@ using Pathfinding;
 
 public class DeerMovement : MonoBehaviour
 {
-    public static float gridSquareSize = 1;
-    public static float moveSpeed = 0.5f;
+    public float moveSpeed = 1f;
     public AIDestinationSetter AIDestinationSetter;
     private bool isWaiting = false;
     private bool isWaitingTimerOn = false;
@@ -70,7 +69,7 @@ public class DeerMovement : MonoBehaviour
             RaycastHit2D hit = Physics2D.Raycast(transform.position, moveDirection, 1, LayerMask.GetMask("Wall"));
             if(hit.collider == null)
             {
-                transform.position = movedPosition;
+                transform.position = Vector3.Lerp(transform.position, movedPosition, Time.deltaTime * moveSpeed);
             }
             // AIDestinationSetter.enemyMove();
             if (canSeePlayer(agroRange)){

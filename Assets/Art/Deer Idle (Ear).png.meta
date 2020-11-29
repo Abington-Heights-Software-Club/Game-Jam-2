@@ -102,12 +102,12 @@ TextureImporter:
       name: Deer Idle (Ear)_0
       rect:
         serializedVersion: 2
-        x: 216
-        y: 972
-        width: 408
-        height: 372
+        x: 17
+        y: 81
+        width: 35
+        height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -123,12 +123,12 @@ TextureImporter:
       name: Deer Idle (Ear)_1
       rect:
         serializedVersion: 2
-        x: 984
-        y: 972
-        width: 408
-        height: 372
+        x: 81
+        y: 81
+        width: 35
+        height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -144,12 +144,12 @@ TextureImporter:
       name: Deer Idle (Ear)_2
       rect:
         serializedVersion: 2
-        x: 216
-        y: 204
-        width: 408
-        height: 372
+        x: 17
+        y: 17
+        width: 35
+        height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -165,12 +165,12 @@ TextureImporter:
       name: Deer Idle (Ear)_3
       rect:
         serializedVersion: 2
-        x: 984
-        y: 204
-        width: 408
-        height: 372
+        x: 81
+        y: 17
+        width: 35
+        height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
