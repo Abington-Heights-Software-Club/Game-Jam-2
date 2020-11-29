@@ -33,7 +33,41 @@ namespace Pathfinding {
 
 		/// <summary>Updates the AI's destination every frame</summary>
 		void Update () {
-			if (target != null && ai != null) ai.destination = target.position;
+
 		}
+
+		public void enemyMove () {
+            //if (target != null && ai != null) ai.dsestination = target.position;
+            Seeker seeker = GetComponent<Seeker>();
+            seeker.StartPath(ai.position, target.position, OnPathComplete);
+
+        }
+
+        public void OnPathComplete (Path p) {
+            float movementAmount = 0.2f;
+            Vector3 direction = p.vectorPath[1] - p.vectorPath[0];
+            if(Mathf.Abs(direction.x) > Mathf.Abs(direction.y)) {
+                //Move on the x Axis
+                if(direction.x >= 0) {
+                    //Move Right
+                    transform.position = new Vector3(transform.position.x + movementAmount, transform.position.y);
+                } else {
+                    //Move Left
+                    transform.position = new Vector3(transform.position.x - movementAmount, transform.position.y);
+                }
+            } else {
+                //Move on the y axis
+                if(direction.y >= 0) {
+                    //Move Right
+                    transform.position = new Vector3(transform.position.x, transform.position.y + movementAmount);
+                } else {
+                    //Move Left
+                    transform.position = new Vector3(transform.position.x, transform.position.y - movementAmount);
+                }
+            } 
+            // Debug.Log(p.vectorPath[0]);
+            // Debug.Log(p.vectorPath[1]);
+            // Debug.Log(direction);
+        }
 	}
 }

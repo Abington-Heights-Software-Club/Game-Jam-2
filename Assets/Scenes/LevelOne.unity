@@ -349,6 +349,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d6289bf70125414b80ec0715e90b762, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextScene: 1
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -501,7 +502,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 14adcdcb043812049a2c44bd9d6e6bb7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -602,7 +603,7 @@ MonoBehaviour:
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
     cacheStartup: 0
-  showNavGraphs: 0
+  showNavGraphs: 1
   showUnwalkableNodes: 1
   debugMode: 0
   debugFloor: 0
@@ -833,12 +834,12 @@ PrefabInstance:
     - target: {fileID: -5200917420173114506, guid: d6a5823ba31c84b48a780b9b43442d7a,
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 0.72
+      value: 1.125
       objectReference: {fileID: 0}
     - target: {fileID: -5200917420173114506, guid: d6a5823ba31c84b48a780b9b43442d7a,
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 0.6
+      value: 0.9375
       objectReference: {fileID: 0}
     - target: {fileID: -5200917420173114506, guid: d6a5823ba31c84b48a780b9b43442d7a,
         type: 3}
