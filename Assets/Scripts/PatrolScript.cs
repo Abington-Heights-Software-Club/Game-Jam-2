@@ -18,7 +18,7 @@ public class PatrolScript : MonoBehaviour
         //calculates end position
         Vector2 endPosition = castPoint.position + direction;
         //action is player space can include walls 
-        RaycastHit2D hit = Physics2D.Linecast(castPoint.position, endPosition, 1 << LayerMask.NameToLayer("Action"));
+        RaycastHit2D hit = Physics2D.Linecast(castPoint.position, endPosition);
         //if it hits anything
         if (hit.collider != null)
         {
