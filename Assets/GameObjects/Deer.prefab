@@ -98,8 +98,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c716a4027a5e9f47911ff41ca1bd60d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
-  tolerance: 0.01
+  moveSpeed: 2.5
+  tolerance: 0.07
   AIDestinationSetter: {fileID: 0}
   castPoint: {fileID: 0}
 --- !u!61 &-5200917420173114506
