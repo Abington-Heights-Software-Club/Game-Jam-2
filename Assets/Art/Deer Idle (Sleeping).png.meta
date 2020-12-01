@@ -1,7 +1,727 @@
 fileFormatVersion: 2
 guid: d7997e1aed279c74ba2e59be701858bd
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -4763687691090083791
+    second: Deer Idle (Sleeping)_0
+  - first:
+      213: -6218919926601294539
+    second: Deer Idle (Sleeping)_1
+  - first:
+      213: -2741655773267127970
+    second: Deer Idle (Sleeping)_2
+  - first:
+      213: 7074369685895397927
+    second: Deer Idle (Sleeping)_3
+  - first:
+      213: 923345131795851725
+    second: Deer Idle (Sleeping)_4
+  - first:
+      213: -4740657233647568925
+    second: Deer Idle (Sleeping)_5
+  - first:
+      213: -9115846647447744135
+    second: Deer Idle (Sleeping)_6
+  - first:
+      213: -6073737637507339514
+    second: Deer Idle (Sleeping)_7
+  - first:
+      213: -928857083111390123
+    second: Deer Idle (Sleeping)_8
+  - first:
+      213: 926626113294423270
+    second: Deer Idle (Sleeping)_9
+  - first:
+      213: -2046436806139943121
+    second: Deer Idle (Sleeping)_10
+  - first:
+      213: -5856614386848471534
+    second: Deer Idle (Sleeping)_11
+  - first:
+      213: -5771476675247740940
+    second: Deer Idle (Sleeping)_12
+  - first:
+      213: -1298495141480449460
+    second: Deer Idle (Sleeping)_13
+  - first:
+      213: -6999413964086463891
+    second: Deer Idle (Sleeping)_14
+  - first:
+      213: -6852066579077618553
+    second: Deer Idle (Sleeping)_15
+  - first:
+      213: -3353417197710946563
+    second: Deer Idle (Sleeping)_16
+  - first:
+      213: -8265401588735695840
+    second: Deer Idle (Sleeping)_17
+  - first:
+      213: 6875312328902634566
+    second: Deer Idle (Sleeping)_18
+  - first:
+      213: 6115767561039600079
+    second: Deer Idle (Sleeping)_19
+  - first:
+      213: -406988622305439134
+    second: Deer Idle (Sleeping)_20
+  - first:
+      213: -5727328827401373889
+    second: Deer Idle (Sleeping)_21
+  - first:
+      213: 4005608722611757035
+    second: Deer Idle (Sleeping)_22
+  - first:
+      213: 2946014358729171594
+    second: Deer Idle (Sleeping)_23
+  - first:
+      213: -2149161285730976579
+    second: Deer Idle (Sleeping)_24
+  - first:
+      213: 3937653503915164604
+    second: Deer Idle (Sleeping)_25
+  - first:
+      213: 2109562518040730396
+    second: Deer Idle (Sleeping)_26
+  - first:
+      213: 1463577574594951129
+    second: Deer Idle (Sleeping)_27
+  - first:
+      213: -4494860169353933448
+    second: Deer Idle (Sleeping)_28
+  - first:
+      213: 8671036434368843797
+    second: Deer Idle (Sleeping)_29
+  - first:
+      213: 6070118281954911840
+    second: Deer Idle (Sleeping)_30
+  - first:
+      213: -4158644906146887639
+    second: Deer Idle (Sleeping)_31
+  - first:
+      213: 8354708620248416364
+    second: Deer Idle (Sleeping)_32
+  - first:
+      213: -389985989658866691
+    second: Deer Idle (Sleeping)_33
+  - first:
+      213: 7362203341204977682
+    second: Deer Idle (Sleeping)_34
+  - first:
+      213: -933796289624795394
+    second: Deer Idle (Sleeping)_35
+  - first:
+      213: -6248851925305017069
+    second: Deer Idle (Sleeping)_36
+  - first:
+      213: -9138349754352463640
+    second: Deer Idle (Sleeping)_37
+  - first:
+      213: 1078898945235741463
+    second: Deer Idle (Sleeping)_38
+  - first:
+      213: 2076845893419871053
+    second: Deer Idle (Sleeping)_39
+  - first:
+      213: 7177396386451837975
+    second: Deer Idle (Sleeping)_40
+  - first:
+      213: -6019622621154398732
+    second: Deer Idle (Sleeping)_41
+  - first:
+      213: 93258689964447377
+    second: Deer Idle (Sleeping)_42
+  - first:
+      213: -1688550376148226646
+    second: Deer Idle (Sleeping)_43
+  - first:
+      213: -2159182285861595248
+    second: Deer Idle (Sleeping)_44
+  - first:
+      213: -4419285365791800440
+    second: Deer Idle (Sleeping)_45
+  - first:
+      213: 528591332455841695
+    second: Deer Idle (Sleeping)_46
+  - first:
+      213: 4545924560245154282
+    second: Deer Idle (Sleeping)_47
+  - first:
+      213: -5440900693563568765
+    second: Deer Idle (Sleeping)_48
+  - first:
+      213: 6814194374071684991
+    second: Deer Idle (Sleeping)_49
+  - first:
+      213: -4744139345049180254
+    second: Deer Idle (Sleeping)_50
+  - first:
+      213: -1597570241314078111
+    second: Deer Idle (Sleeping)_51
+  - first:
+      213: -2194817857848445444
+    second: Deer Idle (Sleeping)_52
+  - first:
+      213: 4254524944576731114
+    second: Deer Idle (Sleeping)_53
+  - first:
+      213: -5774349647463023484
+    second: Deer Idle (Sleeping)_54
+  - first:
+      213: -1746741578069570870
+    second: Deer Idle (Sleeping)_55
+  - first:
+      213: -447778937509763284
+    second: Deer Idle (Sleeping)_56
+  - first:
+      213: 4720199200041830625
+    second: Deer Idle (Sleeping)_57
+  - first:
+      213: 7296896059599168410
+    second: Deer Idle (Sleeping)_58
+  - first:
+      213: -834982947694504717
+    second: Deer Idle (Sleeping)_59
+  - first:
+      213: -6845258069879115283
+    second: Deer Idle (Sleeping)_60
+  - first:
+      213: 8617300377303879911
+    second: Deer Idle (Sleeping)_61
+  - first:
+      213: 5097991715510879508
+    second: Deer Idle (Sleeping)_62
+  - first:
+      213: 5965552860061347907
+    second: Deer Idle (Sleeping)_63
+  - first:
+      213: -2341839912802642018
+    second: Deer Idle (Sleeping)_64
+  - first:
+      213: 133420328096175515
+    second: Deer Idle (Sleeping)_65
+  - first:
+      213: -5883297935616336477
+    second: Deer Idle (Sleeping)_66
+  - first:
+      213: -5794523141456452441
+    second: Deer Idle (Sleeping)_67
+  - first:
+      213: -4039754027157505837
+    second: Deer Idle (Sleeping)_68
+  - first:
+      213: -3626388970556074650
+    second: Deer Idle (Sleeping)_69
+  - first:
+      213: 4439603841587441622
+    second: Deer Idle (Sleeping)_70
+  - first:
+      213: -1280012956088620791
+    second: Deer Idle (Sleeping)_71
+  - first:
+      213: 8969742228792360412
+    second: Deer Idle (Sleeping)_72
+  - first:
+      213: 8208267448503795619
+    second: Deer Idle (Sleeping)_73
+  - first:
+      213: 1207955412124584992
+    second: Deer Idle (Sleeping)_74
+  - first:
+      213: -3618064100718330674
+    second: Deer Idle (Sleeping)_75
+  - first:
+      213: -5678539772722053209
+    second: Deer Idle (Sleeping)_76
+  - first:
+      213: -216074933981172303
+    second: Deer Idle (Sleeping)_77
+  - first:
+      213: -7660969807203070151
+    second: Deer Idle (Sleeping)_78
+  - first:
+      213: 3842254460825136502
+    second: Deer Idle (Sleeping)_79
+  - first:
+      213: -4469525994640825734
+    second: Deer Idle (Sleeping)_80
+  - first:
+      213: -8127853832094034042
+    second: Deer Idle (Sleeping)_81
+  - first:
+      213: -2113984941151558184
+    second: Deer Idle (Sleeping)_82
+  - first:
+      213: -5635052576438535734
+    second: Deer Idle (Sleeping)_83
+  - first:
+      213: -4889884950382852883
+    second: Deer Idle (Sleeping)_84
+  - first:
+      213: 21834414331198368
+    second: Deer Idle (Sleeping)_85
+  - first:
+      213: -4353176582492887942
+    second: Deer Idle (Sleeping)_86
+  - first:
+      213: 5989214059490879312
+    second: Deer Idle (Sleeping)_87
+  - first:
+      213: -8040406142359839690
+    second: Deer Idle (Sleeping)_88
+  - first:
+      213: 5034893945066141961
+    second: Deer Idle (Sleeping)_89
+  - first:
+      213: -6721596918802448617
+    second: Deer Idle (Sleeping)_90
+  - first:
+      213: -915727327869007544
+    second: Deer Idle (Sleeping)_91
+  - first:
+      213: 3641554338896207857
+    second: Deer Idle (Sleeping)_92
+  - first:
+      213: 3524219459373262330
+    second: Deer Idle (Sleeping)_93
+  - first:
+      213: -320872957819061854
+    second: Deer Idle (Sleeping)_94
+  - first:
+      213: 6352995417808668092
+    second: Deer Idle (Sleeping)_95
+  - first:
+      213: 325893825620686886
+    second: Deer Idle (Sleeping)_96
+  - first:
+      213: -674209031092021279
+    second: Deer Idle (Sleeping)_97
+  - first:
+      213: 8941369794480395920
+    second: Deer Idle (Sleeping)_98
+  - first:
+      213: 7248245362184797419
+    second: Deer Idle (Sleeping)_99
+  - first:
+      213: 8440778729671299616
+    second: Deer Idle (Sleeping)_100
+  - first:
+      213: 177122034463778724
+    second: Deer Idle (Sleeping)_101
+  - first:
+      213: -7302436514613682056
+    second: Deer Idle (Sleeping)_102
+  - first:
+      213: 2508974638829973716
+    second: Deer Idle (Sleeping)_103
+  - first:
+      213: 994334761384524697
+    second: Deer Idle (Sleeping)_104
+  - first:
+      213: -1066220467895650702
+    second: Deer Idle (Sleeping)_105
+  - first:
+      213: 2775714248637621106
+    second: Deer Idle (Sleeping)_106
+  - first:
+      213: -144920993492536580
+    second: Deer Idle (Sleeping)_107
+  - first:
+      213: -9178915525625797555
+    second: Deer Idle (Sleeping)_108
+  - first:
+      213: -376677248136023728
+    second: Deer Idle (Sleeping)_109
+  - first:
+      213: -1144810443621405939
+    second: Deer Idle (Sleeping)_110
+  - first:
+      213: 3041976202732118166
+    second: Deer Idle (Sleeping)_111
+  - first:
+      213: -5748470380912943762
+    second: Deer Idle (Sleeping)_112
+  - first:
+      213: -6528896089419637785
+    second: Deer Idle (Sleeping)_113
+  - first:
+      213: -862367959768139759
+    second: Deer Idle (Sleeping)_114
+  - first:
+      213: -1182276466121859812
+    second: Deer Idle (Sleeping)_115
+  - first:
+      213: 4332211394957161109
+    second: Deer Idle (Sleeping)_116
+  - first:
+      213: -7358191139692544104
+    second: Deer Idle (Sleeping)_117
+  - first:
+      213: 3870690895119047969
+    second: Deer Idle (Sleeping)_118
+  - first:
+      213: 1026368822774071560
+    second: Deer Idle (Sleeping)_119
+  - first:
+      213: 3790996615763385266
+    second: Deer Idle (Sleeping)_120
+  - first:
+      213: 6261810464567939861
+    second: Deer Idle (Sleeping)_121
+  - first:
+      213: -2381223465670508029
+    second: Deer Idle (Sleeping)_122
+  - first:
+      213: -3170578555991690154
+    second: Deer Idle (Sleeping)_123
+  - first:
+      213: 6258589344479157285
+    second: Deer Idle (Sleeping)_124
+  - first:
+      213: 396420508319156218
+    second: Deer Idle (Sleeping)_125
+  - first:
+      213: 4092639055040891753
+    second: Deer Idle (Sleeping)_126
+  - first:
+      213: 6258704771710616117
+    second: Deer Idle (Sleeping)_127
+  - first:
+      213: -7093292891031313425
+    second: Deer Idle (Sleeping)_128
+  - first:
+      213: -9093005448458834692
+    second: Deer Idle (Sleeping)_129
+  - first:
+      213: 5644340875400826177
+    second: Deer Idle (Sleeping)_130
+  - first:
+      213: 3010273891153194128
+    second: Deer Idle (Sleeping)_131
+  - first:
+      213: -7027925728231163027
+    second: Deer Idle (Sleeping)_132
+  - first:
+      213: -4394766192091220690
+    second: Deer Idle (Sleeping)_133
+  - first:
+      213: 4770223114933183453
+    second: Deer Idle (Sleeping)_134
+  - first:
+      213: 1197501514239625971
+    second: Deer Idle (Sleeping)_135
+  - first:
+      213: 9134793270979536154
+    second: Deer Idle (Sleeping)_136
+  - first:
+      213: 5933464545355127768
+    second: Deer Idle (Sleeping)_137
+  - first:
+      213: 6867473172050474831
+    second: Deer Idle (Sleeping)_138
+  - first:
+      213: 4784406707272245238
+    second: Deer Idle (Sleeping)_139
+  - first:
+      213: -3069595519681947008
+    second: Deer Idle (Sleeping)_140
+  - first:
+      213: 4739975179865108665
+    second: Deer Idle (Sleeping)_141
+  - first:
+      213: 2038156193558457412
+    second: Deer Idle (Sleeping)_142
+  - first:
+      213: -6030430251616347055
+    second: Deer Idle (Sleeping)_143
+  - first:
+      213: -296203066110189132
+    second: Deer Idle (Sleeping)_144
+  - first:
+      213: -3666904901826190196
+    second: Deer Idle (Sleeping)_145
+  - first:
+      213: -4672687127309465900
+    second: Deer Idle (Sleeping)_146
+  - first:
+      213: -6738130650421492287
+    second: Deer Idle (Sleeping)_147
+  - first:
+      213: -5473648879372694104
+    second: Deer Idle (Sleeping)_148
+  - first:
+      213: -5277691014332076352
+    second: Deer Idle (Sleeping)_149
+  - first:
+      213: -5426577941793623377
+    second: Deer Idle (Sleeping)_150
+  - first:
+      213: -8598298339327512974
+    second: Deer Idle (Sleeping)_151
+  - first:
+      213: 6777204118165426151
+    second: Deer Idle (Sleeping)_152
+  - first:
+      213: 4575432669229416073
+    second: Deer Idle (Sleeping)_153
+  - first:
+      213: 7042726924728473140
+    second: Deer Idle (Sleeping)_154
+  - first:
+      213: 2288665659725892298
+    second: Deer Idle (Sleeping)_155
+  - first:
+      213: -4441745214734248391
+    second: Deer Idle (Sleeping)_156
+  - first:
+      213: 2502021950633631256
+    second: Deer Idle (Sleeping)_157
+  - first:
+      213: 933953091719271334
+    second: Deer Idle (Sleeping)_158
+  - first:
+      213: -164821288090307312
+    second: Deer Idle (Sleeping)_159
+  - first:
+      213: -8671363382095921547
+    second: Deer Idle (Sleeping)_160
+  - first:
+      213: 8424323288609586841
+    second: Deer Idle (Sleeping)_161
+  - first:
+      213: -3292438698305976035
+    second: Deer Idle (Sleeping)_162
+  - first:
+      213: -1070079818815990971
+    second: Deer Idle (Sleeping)_163
+  - first:
+      213: -1797589640613648873
+    second: Deer Idle (Sleeping)_164
+  - first:
+      213: -8469055565153444295
+    second: Deer Idle (Sleeping)_165
+  - first:
+      213: -2748905691300754231
+    second: Deer Idle (Sleeping)_166
+  - first:
+      213: -109088351291259326
+    second: Deer Idle (Sleeping)_167
+  - first:
+      213: -4676302276908378735
+    second: Deer Idle (Sleeping)_168
+  - first:
+      213: 440463250294651530
+    second: Deer Idle (Sleeping)_169
+  - first:
+      213: -1330433413001265460
+    second: Deer Idle (Sleeping)_170
+  - first:
+      213: 8813739311417699751
+    second: Deer Idle (Sleeping)_171
+  - first:
+      213: 7922718433197188255
+    second: Deer Idle (Sleeping)_172
+  - first:
+      213: -6499842222924066657
+    second: Deer Idle (Sleeping)_173
+  - first:
+      213: 6325889477638373502
+    second: Deer Idle (Sleeping)_174
+  - first:
+      213: -6662115892759249999
+    second: Deer Idle (Sleeping)_175
+  - first:
+      213: -7207366454311190790
+    second: Deer Idle (Sleeping)_176
+  - first:
+      213: -1021024842381812124
+    second: Deer Idle (Sleeping)_177
+  - first:
+      213: 5579599419348209846
+    second: Deer Idle (Sleeping)_178
+  - first:
+      213: 1498971665753092755
+    second: Deer Idle (Sleeping)_179
+  - first:
+      213: -507256393990136705
+    second: Deer Idle (Sleeping)_180
+  - first:
+      213: -4585291424885922739
+    second: Deer Idle (Sleeping)_181
+  - first:
+      213: -2585803183384425127
+    second: Deer Idle (Sleeping)_182
+  - first:
+      213: -3115956802564694532
+    second: Deer Idle (Sleeping)_183
+  - first:
+      213: -797753705266529635
+    second: Deer Idle (Sleeping)_184
+  - first:
+      213: 1559676486144108133
+    second: Deer Idle (Sleeping)_185
+  - first:
+      213: -5815764614119428612
+    second: Deer Idle (Sleeping)_186
+  - first:
+      213: 8680768355011684705
+    second: Deer Idle (Sleeping)_187
+  - first:
+      213: -1294829887848816918
+    second: Deer Idle (Sleeping)_188
+  - first:
+      213: 3754400359008052851
+    second: Deer Idle (Sleeping)_189
+  - first:
+      213: 4659652283931631623
+    second: Deer Idle (Sleeping)_190
+  - first:
+      213: 7599386405516186030
+    second: Deer Idle (Sleeping)_191
+  - first:
+      213: 4742579385859231739
+    second: Deer Idle (Sleeping)_192
+  - first:
+      213: -6734218720598603406
+    second: Deer Idle (Sleeping)_193
+  - first:
+      213: -3295530875992738290
+    second: Deer Idle (Sleeping)_194
+  - first:
+      213: 1644996143954382306
+    second: Deer Idle (Sleeping)_195
+  - first:
+      213: -9195860516181120793
+    second: Deer Idle (Sleeping)_196
+  - first:
+      213: -3454870465959741024
+    second: Deer Idle (Sleeping)_197
+  - first:
+      213: 3406405861078159557
+    second: Deer Idle (Sleeping)_198
+  - first:
+      213: -5365375836294169904
+    second: Deer Idle (Sleeping)_199
+  - first:
+      213: 7913658310628090072
+    second: Deer Idle (Sleeping)_200
+  - first:
+      213: 4474654946119661759
+    second: Deer Idle (Sleeping)_201
+  - first:
+      213: -1520242130072579789
+    second: Deer Idle (Sleeping)_202
+  - first:
+      213: -6816961692026905117
+    second: Deer Idle (Sleeping)_203
+  - first:
+      213: -3692171150078325904
+    second: Deer Idle (Sleeping)_204
+  - first:
+      213: 5472840907694383357
+    second: Deer Idle (Sleeping)_205
+  - first:
+      213: -6339612015259654502
+    second: Deer Idle (Sleeping)_206
+  - first:
+      213: 7701194800060845582
+    second: Deer Idle (Sleeping)_207
+  - first:
+      213: 1420603188688471959
+    second: Deer Idle (Sleeping)_208
+  - first:
+      213: 9144496010185338335
+    second: Deer Idle (Sleeping)_209
+  - first:
+      213: 3873727563372748852
+    second: Deer Idle (Sleeping)_210
+  - first:
+      213: -6982704803983210296
+    second: Deer Idle (Sleeping)_211
+  - first:
+      213: 5155940601728659781
+    second: Deer Idle (Sleeping)_212
+  - first:
+      213: -1645022957666815577
+    second: Deer Idle (Sleeping)_213
+  - first:
+      213: 1471334696041137933
+    second: Deer Idle (Sleeping)_214
+  - first:
+      213: -8000196602171763903
+    second: Deer Idle (Sleeping)_215
+  - first:
+      213: 5043671513152854942
+    second: Deer Idle (Sleeping)_216
+  - first:
+      213: -2607373760662455860
+    second: Deer Idle (Sleeping)_217
+  - first:
+      213: -835324616571288837
+    second: Deer Idle (Sleeping)_218
+  - first:
+      213: 8654711104963200774
+    second: Deer Idle (Sleeping)_219
+  - first:
+      213: -2110947624961119612
+    second: Deer Idle (Sleeping)_220
+  - first:
+      213: -9068908974637469886
+    second: Deer Idle (Sleeping)_221
+  - first:
+      213: 3585383702354767101
+    second: Deer Idle (Sleeping)_222
+  - first:
+      213: -6448026587126817682
+    second: Deer Idle (Sleeping)_223
+  - first:
+      213: -505861803533224811
+    second: Deer Idle (Sleeping)_224
+  - first:
+      213: 272773248602361546
+    second: Deer Idle (Sleeping)_225
+  - first:
+      213: -7901509571687633104
+    second: Deer Idle (Sleeping)_226
+  - first:
+      213: 8452987712491277057
+    second: Deer Idle (Sleeping)_227
+  - first:
+      213: 6353979419623814773
+    second: Deer Idle (Sleeping)_228
+  - first:
+      213: 7169803782252325935
+    second: Deer Idle (Sleeping)_229
+  - first:
+      213: -3938172897870195063
+    second: Deer Idle (Sleeping)_230
+  - first:
+      213: -2246195143499581504
+    second: Deer Idle (Sleeping)_231
+  - first:
+      213: -3179370728031066793
+    second: Deer Idle (Sleeping)_232
+  - first:
+      213: -7856903653438230504
+    second: Deer Idle (Sleeping)_233
+  - first:
+      213: -610462635104353398
+    second: Deer Idle (Sleeping)_234
+  - first:
+      213: 174157288531893225
+    second: Deer Idle (Sleeping)_235
+  - first:
+      213: -3145681619000495799
+    second: Deer Idle (Sleeping)_236
+  - first:
+      213: 6833397193187993390
+    second: Deer Idle (Sleeping)_237
+  - first:
+      213: -1185448770001974500
+    second: Deer Idle (Sleeping)_238
+  - first:
+      213: 8969316634352199086
+    second: Deer Idle (Sleeping)_239
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -40,12 +760,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 2
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -85,7 +805,196 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Deer Idle (Sleeping)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 130cca7b84bf3edb0800000000000000
+      internalID: -4763687691090083791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deer Idle (Sleeping)_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53dd458a645f1b9a0800000000000000
+      internalID: -6218919926601294539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deer Idle (Sleeping)_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e519302a99ea3f9d0800000000000000
+      internalID: -2741655773267127970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deer Idle (Sleeping)_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72246996fb53d2260800000000000000
+      internalID: 7074369685895397927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deer Idle (Sleeping)_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc927c9518160dc00800000000000000
+      internalID: 923345131795851725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deer Idle (Sleeping)_5
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e7fc82fc5dc53eb0800000000000000
+      internalID: -4740657233647568925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deer Idle (Sleeping)_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97111ff95c10e7180800000000000000
+      internalID: -9115846647447744135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deer Idle (Sleeping)_7
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60b64797ccfb5bba0800000000000000
+      internalID: -6073737637507339514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deer Idle (Sleeping)_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5544a0a77690c13f0800000000000000
+      internalID: -928857083111390123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
