@@ -7,16 +7,11 @@ public class DeerMovement : MonoBehaviour
 {
     public float moveSpeed = 1f;
     public float tolerance = 0.05f;
-    public AIDestinationSetter AIDestinationSetter;
     private bool isWaiting = false;
     private bool isWaitingTimerOn = false;
     private Animator anim;
     private bool isCurrentlyMoving = false;
-
-    public Transform castPoint;
-    private bool isInAgro = false;
     private Vector3 currentMove = new Vector3();
-    private float agroRange = 3;
     private Vector3 movedPosition = new Vector3(0, 0);
     private Vector3 moveDirection = new Vector2(0, 0);
     //private Vector3 targetPos = new Vector3();
@@ -39,15 +34,6 @@ public class DeerMovement : MonoBehaviour
                 isCurrentlyMoving = false;
                 transform.position = movedPosition;
                 anim.SetBool("isRunning", false);
-                // AIDestinationSetter.enemyMove();
-                if (canSeePlayer(agroRange))
-                {
-                    isInAgro = true;
-                }
-                if (isInAgro)
-                {
-                    AIDestinationSetter.enemyMove();
-                }
             }
         }
         else
@@ -121,27 +107,6 @@ public class DeerMovement : MonoBehaviour
         }
         isWaitingTimerOn = false;
     }
-    bool canSeePlayer(float distance){
-        bool val = false;
-        float castDist = distance;
-        //calculates end position
-        Vector2 endPosition = castPoint.position + Vector3.right * distance;
-        //action is player space can include walls 
-        RaycastHit2D hit = Physics2D.Linecast(castPoint.position, endPosition);
-        //if it hits anything
-        if(hit.collider !=null){
-            //if what it hits is player
-            if(hit.collider.gameObject.CompareTag("Player")){
-                //switch on agro mode
-                val = true;
-            }
-            else{
-                //not agro
-                val = false;
-            }
-
-        }
-        return val;
-    }
+    
 
 }

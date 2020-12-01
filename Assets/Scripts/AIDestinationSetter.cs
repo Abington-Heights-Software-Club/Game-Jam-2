@@ -33,6 +33,7 @@ namespace Pathfinding {
 
 		/// <summary>Updates the AI's destination every frame</summary>
 		void Update () {
+			
 
 		}
 
