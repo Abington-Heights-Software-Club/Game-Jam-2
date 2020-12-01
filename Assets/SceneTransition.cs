@@ -6,10 +6,13 @@ using UnityEngine.SceneManagement;
 public class SceneTransition : MonoBehaviour
 {
     public Animator anim;
-    public IEnumerator circleTransition()
+    private IEnumerator circleTransition()
     {
         anim.SetTrigger("end");
         yield return new WaitForSeconds(0.75f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+    public void getCircleTransition(){
+        StartCoroutine(circleTransition());
     }
 }
