@@ -17,6 +17,8 @@ namespace Pathfinding {
 		/// <summary>The object that the AI should move to</summary>
 		public Transform target;
 		IAstarAI ai;
+        public Vector3 movedPosition = Vector3.zero;
+        public Vector3 movedDirection = Vector3.zero;
 
 		void OnEnable () {
 			ai = GetComponent<IAstarAI>();
@@ -39,36 +41,44 @@ namespace Pathfinding {
 
 		public void enemyMove () {
             //if (target != null && ai != null) ai.dsestination = target.position;
+            movedPosition = Vector3.zero;
+            movedDirection = Vector3.zero;
             Seeker seeker = GetComponent<Seeker>();
             seeker.StartPath(ai.position, target.position, OnPathComplete);
 
         }
 
         public void OnPathComplete (Path p) {
-            float movementAmount = 1f;
+            movedPosition = Vector3.zero;
+            movedDirection = Vector3.zero;
+            Debug.Log("Path Calculated");
             Vector3 direction = p.vectorPath[1] - p.vectorPath[0];
             if(ai.position != target.position && Mathf.Abs(direction.x) > Mathf.Abs(direction.y)) {
                 //Move on the x Axis
                 if(direction.x >= 0) {
                     //Move Right
-                    transform.position = new Vector3(transform.position.x + movementAmount, transform.position.y);
+                    movedPosition = new Vector3(transform.position.x + 1, transform.position.y);
+                    movedDirection = Vector3.right;
                 } else {
                     //Move Left
-                    transform.position = new Vector3(transform.position.x - movementAmount, transform.position.y);
+                    movedPosition = new Vector3(transform.position.x - 1, transform.position.y);
+                    movedDirection = Vector3.left;
                 }
             } else if(ai.position != target.position){
                 //Move on the y axis
                 if(direction.y >= 0) {
-                    //Move Right
-                    transform.position = new Vector3(transform.position.x, transform.position.y + movementAmount);
+                    //Move Up
+                    movedPosition = new Vector3(transform.position.x, transform.position.y + 1);
+                    movedDirection = Vector3.up;
+                    Debug.Log("Path Calculated Y");
                 } else {
-                    //Move Left
-                    transform.position = new Vector3(transform.position.x, transform.position.y - movementAmount);
+                    //Move Down
+                    movedPosition = new Vector3(transform.position.x, transform.position.y - 1);
+                    movedDirection = Vector3.down;
                 }
-            } 
-            // Debug.Log(p.vectorPath[0]);
-            // Debug.Log(p.vectorPath[1]);
-            // Debug.Log(direction);
+            }
+            Debug.Log("Moved Position: " + movedPosition);
+            Debug.Log("Moved Direction: " + movedDirection);
         }
 	}
 }

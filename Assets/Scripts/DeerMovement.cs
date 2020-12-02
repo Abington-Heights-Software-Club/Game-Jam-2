@@ -15,7 +15,8 @@ public class DeerMovement : MonoBehaviour
     private Vector3 movedPosition = new Vector3(0, 0);
     private Vector3 moveDirection = new Vector2(0, 0);
     //private Vector3 targetPos = new Vector3();
-    private float currentDistTraveled; //used to determine how much of each player move is left to make
+    public GameObject predictedPosition;
+
 
 
     // Start is called before the first frame update
@@ -29,11 +30,13 @@ public class DeerMovement : MonoBehaviour
         if(isCurrentlyMoving)
         {
             transform.position += moveDirection * Time.deltaTime * moveSpeed;
-            if(Mathf.Abs(transform.position.x - movedPosition.x) < tolerance && Mathf.Abs(transform.position.y - movedPosition.y) < tolerance)
+            predictedPosition.transform.position -= moveDirection * Time.deltaTime * moveSpeed;
+            if (Mathf.Abs(transform.position.x - movedPosition.x) < tolerance && Mathf.Abs(transform.position.y - movedPosition.y) < tolerance)
             {
                 isCurrentlyMoving = false;
                 transform.position = movedPosition;
                 anim.SetBool("isRunning", false);
+                predictedPosition.transform.position = transform.position;
             }
         }
         else
@@ -89,6 +92,7 @@ public class DeerMovement : MonoBehaviour
                 else
                 {
                     anim.SetBool("isRunning", true);
+                    predictedPosition.transform.position = movedPosition;
                 }
             }
         }
