@@ -1,25 +1,7 @@
 fileFormatVersion: 2
-guid: cf2829ad537c05647b551f8d4c62d1e6
+guid: 734479bf781c9104791fb901b93d4543
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -4411332165844202745
-    second: Deer Back (Walking)_0
-  - first:
-      213: 3591289484713028765
-    second: Deer Back (Walking)_1
-  - first:
-      213: 7408606237761784884
-    second: Deer Back (Walking)_2
-  - first:
-      213: 1616413561002645380
-    second: Deer Back (Walking)_3
-  - first:
-      213: 3546158708579166714
-    second: Deer Back (Walking)_4
-  - first:
-      213: -8782100978950000995
-    second: Deer Back (Walking)_5
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -49,7 +31,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: -1
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -58,12 +40,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -82,19 +64,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0

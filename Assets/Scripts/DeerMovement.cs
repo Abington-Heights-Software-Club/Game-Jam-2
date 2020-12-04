@@ -16,7 +16,8 @@ public class DeerMovement : MonoBehaviour
     private Vector3 moveDirection = new Vector2(0, 0);
     //private Vector3 targetPos = new Vector3();
     public GameObject predictedPosition;
-
+    //This is used by AgroEnemyPatrol to know that predicted gameobject was set for next move
+    public bool willMove = false;
 
 
     // Start is called before the first frame update
@@ -27,7 +28,7 @@ public class DeerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(isCurrentlyMoving)
+        if (isCurrentlyMoving)
         {
             transform.position += moveDirection * Time.deltaTime * moveSpeed;
             predictedPosition.transform.position -= moveDirection * Time.deltaTime * moveSpeed;
@@ -93,6 +94,7 @@ public class DeerMovement : MonoBehaviour
                 {
                     anim.SetBool("isRunning", true);
                     predictedPosition.transform.position = movedPosition;
+                    willMove = true;
                 }
             }
         }

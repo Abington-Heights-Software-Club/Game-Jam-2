@@ -130,7 +130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2.5
-  tolerance: 0.07
+  tolerance: 0.2
   predictedPosition: {fileID: 1246676890}
 --- !u!61 &-5200917420173114506
 BoxCollider2D:
