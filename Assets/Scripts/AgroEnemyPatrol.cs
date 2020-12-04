@@ -18,6 +18,7 @@ public class AgroEnemyPatrol : MonoBehaviour
     private Vector3 movedPosition = new Vector3(0, 0);
     public float moveSpeed = 2.5f;
     public float tolerance = 0.07f;
+    private Animator anim;
 
     public void setEnemyDirection(Vector3 newDirection)
     {
@@ -30,6 +31,11 @@ public class AgroEnemyPatrol : MonoBehaviour
     public void setMovedPosition(bool state)
     {
         isCurrentlyMoving = state;
+    }
+    private void Start()
+    {
+        anim = GetComponent<Animator>();
+        anim.SetBool("isRunning", false);
     }
     private void Patrolling()
     {
@@ -78,7 +84,7 @@ public class AgroEnemyPatrol : MonoBehaviour
             }
             else
             {
-                Debug.Log("Moving");
+                anim.SetBool("isRunning", true);
                 transform.position += enemyDirection * Time.deltaTime * moveSpeed;
                 if (Mathf.Abs(transform.position.x - movedPosition.x) < tolerance && Mathf.Abs(transform.position.y - movedPosition.y) < tolerance)
                 {
@@ -87,6 +93,7 @@ public class AgroEnemyPatrol : MonoBehaviour
                     transform.position = movedPosition;
                     movedPosition = Vector3.zero;
                     enemyDirection = Vector3.zero;
+                    anim.SetBool("isRunning", false);
                 }
             }
         }
