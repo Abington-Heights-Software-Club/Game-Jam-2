@@ -10,7 +10,7 @@ public class SceneTransition : MonoBehaviour
     {
         anim.SetTrigger("end");
         yield return new WaitForSeconds(0.75f);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
     public void getCircleTransition(){
         StartCoroutine(circleTransition());

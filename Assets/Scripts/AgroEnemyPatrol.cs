@@ -6,6 +6,7 @@ using Pathfinding;
 public class AgroEnemyPatrol : MonoBehaviour
 {
     public AIDestinationSetter AIDestinationSetter;
+    public DeerMovement DeerMovement;
     public int[] path;
     private int currentpos = -1;
     private bool isInAgro = false;
@@ -91,7 +92,7 @@ public class AgroEnemyPatrol : MonoBehaviour
         }
         else
         {
-            if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.S))
+            if (DeerMovement.willMove)
             {
                 if (isInAgro)
                 {
@@ -102,6 +103,7 @@ public class AgroEnemyPatrol : MonoBehaviour
                 {
                     Patrolling();
                 }
+                DeerMovement.willMove = false;
             }
         }     
     }
