@@ -10,19 +10,21 @@ public class DeerMovement : MonoBehaviour
     private bool isWaiting = false;
     private bool isWaitingTimerOn = false;
     private Animator anim;
-    private bool isCurrentlyMoving = false;
+    private bool isCurrentlyMoving;
     private Vector3 currentMove = new Vector3();
     private Vector3 movedPosition = new Vector3(0, 0);
     private Vector3 moveDirection = new Vector2(0, 0);
     //private Vector3 targetPos = new Vector3();
     public GameObject predictedPosition;
     //This is used by AgroEnemyPatrol to know that predicted gameobject was set for next move
-    public bool willMove = false;
+    public bool willMove;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        willMove = false;
+        isCurrentlyMoving = false;
         anim = GetComponent<Animator>();
     }
     // Update is called once per frame
@@ -32,6 +34,7 @@ public class DeerMovement : MonoBehaviour
         {
             transform.position += moveDirection * Time.deltaTime * moveSpeed;
             predictedPosition.transform.position -= moveDirection * Time.deltaTime * moveSpeed;
+            willMove = false;
             if (Mathf.Abs(transform.position.x - movedPosition.x) < tolerance && Mathf.Abs(transform.position.y - movedPosition.y) < tolerance)
             {
                 isCurrentlyMoving = false;

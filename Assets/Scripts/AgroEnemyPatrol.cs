@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
+using UnityEngine.SceneManagement;
 
 public class AgroEnemyPatrol : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class AgroEnemyPatrol : MonoBehaviour
     private int currentpos = -1;
     private bool isInAgro = false;
     private Vector3 enemyDirection =Vector3.right;
-    public SceneTransition SceneManager;
+    public SceneTransition SceneTransition;
     public GameObject raycastPosition;
     private bool isCurrentlyMoving = false;
     private Vector3 currentMove = new Vector3();
@@ -88,7 +89,6 @@ public class AgroEnemyPatrol : MonoBehaviour
                 transform.position += enemyDirection * Time.deltaTime * moveSpeed;
                 if (Mathf.Abs(transform.position.x - movedPosition.x) < tolerance && Mathf.Abs(transform.position.y - movedPosition.y) < tolerance)
                 {
-                    Debug.Log("Done Moving");
                     isCurrentlyMoving = false;
                     transform.position = movedPosition;
                     movedPosition = Vector3.zero;
@@ -126,10 +126,10 @@ public class AgroEnemyPatrol : MonoBehaviour
         return false;
     }
      private void OnTriggerEnter2D(Collider2D collision)
-    {
+     {
         if (collision.gameObject.CompareTag("Player"))
         {
-           SceneManager.getCircleTransition();
+           SceneTransition.getCircleTransition(SceneManager.GetActiveScene().buildIndex);
         }
     }
 }

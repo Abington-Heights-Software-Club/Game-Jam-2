@@ -11,7 +11,7 @@ public class EndOfLevel : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            SceneTransition.getCircleTransition();
+            SceneTransition.getCircleTransition(nextScene);
         }
     }
 }
