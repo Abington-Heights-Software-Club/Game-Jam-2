@@ -39,6 +39,7 @@ public class SniperEnemy : MonoBehaviour
         }
         if (canSeePlayer())
         {
+            //BRAEDEN ADD YOUR PARTICLE SYSTEM INSTANTIATION HERE!!!!!!!
             SceneTransition.getCircleTransition(SceneManager.GetActiveScene().buildIndex);
         }
     }
