@@ -35,7 +35,6 @@ namespace Pathfinding {
 
 		/// <summary>Updates the AI's destination every frame</summary>
 		void Update () {
-			
 
 		}
 
@@ -57,24 +56,87 @@ namespace Pathfinding {
                 //Move on the x Axis
                 if(direction.x >= 0) {
                     //Move Right
-                    movedPosition = new Vector3(transform.position.x + 1, transform.position.y);
-                    movedDirection = Vector3.right;
+                    RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right, 1.0f, LayerMask.GetMask("Wall"));
+                    if(hit.collider != null) {
+                        Debug.Log("Hit");
+                        if(direction.y >= 0) {
+                            //move up
+                            movedPosition = new Vector3(transform.position.x, transform.position.y + 1);
+                            movedDirection = Vector3.up;
+                        } else {
+                            //move down
+                            movedPosition = new Vector3(transform.position.x, transform.position.y - 1);
+                            movedDirection = Vector3.down;
+                        }        
+                    } else {
+                        Debug.Log("No Hit");
+                        //move normally
+                        movedPosition = new Vector3(transform.position.x + 1, transform.position.y);
+                        movedDirection = Vector3.right; 
+                    }
                 } else {
                     //Move Left
-                    movedPosition = new Vector3(transform.position.x - 1, transform.position.y);
-                    movedDirection = Vector3.left;
+                    RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.left, 1.0f, LayerMask.GetMask("Wall"));
+                    if(hit.collider != null) {
+                        Debug.Log("Hit");
+                        if(direction.y >= 0) {
+                            //move up
+                            movedPosition = new Vector3(transform.position.x, transform.position.y + 1);
+                            movedDirection = Vector3.up;
+                        } else {
+                            //move down
+                            movedPosition = new Vector3(transform.position.x, transform.position.y - 1);
+                            movedDirection = Vector3.down;
+                        }        
+                    } else {
+                        Debug.Log("No Hit");
+                        //move normally
+                        movedPosition = new Vector3(transform.position.x - 1, transform.position.y);
+                        movedDirection = Vector3.left; 
+                    }
                 }
-            } else if(ai.position != target.position){
+            } else if(ai.position != target.position) {
                 //Move on the y axis
                 if(direction.y >= 0) {
                     //Move Up
-                    movedPosition = new Vector3(transform.position.x, transform.position.y + 1);
-                    movedDirection = Vector3.up;
-                    Debug.Log("Path Calculated Y");
+                    RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.up, 1.0f, LayerMask.GetMask("Wall"));
+                    if(hit.collider != null) {
+                        Debug.Log("Hit");
+                        if(direction.y >= 0) {
+                            //move right
+                            movedPosition = new Vector3(transform.position.x + 1, transform.position.y);
+                            movedDirection = Vector3.right;
+                        } else {
+                            //move left
+                            movedPosition = new Vector3(transform.position.x - 1, transform.position.y);
+                            movedDirection = Vector3.left;
+                        }        
+                    } else {
+                        Debug.Log("No Hit");
+                        //move normally
+                        movedPosition = new Vector3(transform.position.x, transform.position.y + 1);
+                        movedDirection = Vector3.up; 
+                    }
                 } else {
                     //Move Down
-                    movedPosition = new Vector3(transform.position.x, transform.position.y - 1);
-                    movedDirection = Vector3.down;
+                    RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 1.0f, LayerMask.GetMask("Wall"));
+                    if(hit.collider != null) {
+                        Debug.Log("Hit");
+                        if(direction.x >= 0) {
+                            //move right
+                            movedPosition = new Vector3(transform.position.x + 1, transform.position.y);
+                            movedDirection = Vector3.right;
+                        } else {
+                            //move left
+                            movedPosition = new Vector3(transform.position.x - 1, transform.position.y);
+                            movedDirection = Vector3.left;
+                        }        
+                    } else {
+                        Debug.Log("No Hit");
+                        //move normally
+                        movedPosition = new Vector3(transform.position.x, transform.position.y - 1);
+                        movedDirection = Vector3.down; 
+                    }
                 }
             }
             Debug.Log("Moved Position: " + movedPosition);
