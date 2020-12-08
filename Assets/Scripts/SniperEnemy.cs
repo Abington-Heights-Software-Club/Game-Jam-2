@@ -10,18 +10,43 @@ public class SniperEnemy : MonoBehaviour
     public SceneTransition SceneTransition;
     public float tolerance = 0.1f;
     private Vector3 enemyDirection = Vector3.right;
+    public bool rotate;
+    //Use only when rotate == false. Options: "right", "left", "up", "down"
+    public string initialDirection;
     // Start is called before the first frame update
     void Start()
     {
+        if(!rotate)
+        {
+            if(initialDirection.ToLower().Equals("right"))
+            {
+                enemyDirection = Vector3.right;
+            }
+            else if (initialDirection.ToLower().Equals("left"))
+            {
+                enemyDirection = Vector3.left;
+            }
+            else if (initialDirection.ToLower().Equals("up"))
+            {
+                enemyDirection = Vector3.up;
+            }
+            else if (initialDirection.ToLower().Equals("down"))
+            {
+                enemyDirection = Vector3.down;
+            }
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(DeerMovement.willMove);
-        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D))
+        if (rotate && (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D)))
         {
             float zAngle = transform.eulerAngles.z + 90;
+            if(zAngle == 360)
+            {
+                zAngle = 0;
+            }
             transform.eulerAngles = new Vector3(0, 0, zAngle);
             if(Mathf.Abs(zAngle - 90) < tolerance)
             {
@@ -30,7 +55,7 @@ public class SniperEnemy : MonoBehaviour
             else if(Mathf.Abs(zAngle - 180) < tolerance) {
                 enemyDirection = Vector3.left;
             }
-            else if (Mathf.Abs(zAngle + 90) < tolerance) {
+            else if (Mathf.Abs(zAngle - 270) < tolerance) {
                 enemyDirection = Vector3.down;
             }
             else if (Mathf.Abs(zAngle) < tolerance) {
