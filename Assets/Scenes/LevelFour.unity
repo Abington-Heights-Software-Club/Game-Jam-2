@@ -2286,6 +2286,14 @@ PrefabInstance:
       propertyPath: m_Tiles.Array.data[79].second.m_AllTileFlags
       value: 1073741825
       objectReference: {fileID: 0}
+    - target: {fileID: 490469608, guid: fb5994dc1c9ba4e4e948d7386375aa62, type: 3}
+      propertyPath: nextScene
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 490469608, guid: fb5994dc1c9ba4e4e948d7386375aa62, type: 3}
+      propertyPath: SceneTransition
+      value: 
+      objectReference: {fileID: 1859607112}
     - target: {fileID: 180364476760353846, guid: fb5994dc1c9ba4e4e948d7386375aa62,
         type: 3}
       propertyPath: m_Tiles.Array.size
