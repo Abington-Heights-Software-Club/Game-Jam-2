@@ -8860,6 +8860,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5943090662510046268, guid: edf22226057aefa418c2e40704a41c7d,
+        type: 3}
+      propertyPath: rotate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7486770687114449289, guid: edf22226057aefa418c2e40704a41c7d,
+        type: 3}
+      propertyPath: rotate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7486770687114449289, guid: edf22226057aefa418c2e40704a41c7d,
+        type: 3}
+      propertyPath: SceneTransition
+      value: 
+      objectReference: {fileID: 1255144847}
+    - target: {fileID: 7486770687114449289, guid: edf22226057aefa418c2e40704a41c7d,
+        type: 3}
+      propertyPath: DeerMovement
+      value: 
+      objectReference: {fileID: 2014439505}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edf22226057aefa418c2e40704a41c7d, type: 3}
 --- !u!95 &1727326850 stripped
@@ -9064,12 +9084,12 @@ PrefabInstance:
     - target: {fileID: 5712738645728322889, guid: edf22226057aefa418c2e40704a41c7d,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.7071068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5712738645728322889, guid: edf22226057aefa418c2e40704a41c7d,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5712738645728322889, guid: edf22226057aefa418c2e40704a41c7d,
         type: 3}
@@ -9087,6 +9107,46 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5712738645728322889, guid: edf22226057aefa418c2e40704a41c7d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5943090662510046268, guid: edf22226057aefa418c2e40704a41c7d,
+        type: 3}
+      propertyPath: initialDirection
+      value: up
+      objectReference: {fileID: 0}
+    - target: {fileID: 5943090662510046268, guid: edf22226057aefa418c2e40704a41c7d,
+        type: 3}
+      propertyPath: rotate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7486770687114449289, guid: edf22226057aefa418c2e40704a41c7d,
+        type: 3}
+      propertyPath: SceneTransition
+      value: 
+      objectReference: {fileID: 1255144847}
+    - target: {fileID: 7486770687114449289, guid: edf22226057aefa418c2e40704a41c7d,
+        type: 3}
+      propertyPath: initialDirection
+      value: up
+      objectReference: {fileID: 0}
+    - target: {fileID: 7486770687114449289, guid: edf22226057aefa418c2e40704a41c7d,
+        type: 3}
+      propertyPath: DeerMovement
+      value: 
+      objectReference: {fileID: 2014439505}
+    - target: {fileID: 8875594648227785284, guid: edf22226057aefa418c2e40704a41c7d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875594648227785284, guid: edf22226057aefa418c2e40704a41c7d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875594648227785284, guid: edf22226057aefa418c2e40704a41c7d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90

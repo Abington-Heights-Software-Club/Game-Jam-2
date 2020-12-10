@@ -13,6 +13,8 @@ public class SniperEnemy : MonoBehaviour
     public bool rotate;
     //Use only when rotate == false. Options: "right", "left", "up", "down"
     public string initialDirection;
+    public GameObject gunParticles;
+    private bool notDoneShooting = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -62,10 +64,11 @@ public class SniperEnemy : MonoBehaviour
                 enemyDirection = Vector3.right;
             }
         }
-        if (canSeePlayer())
+        if (canSeePlayer() && notDoneShooting)
         {
-            //BRAEDEN ADD YOUR PARTICLE SYSTEM INSTANTIATION HERE!!!!!!!
+            Instantiate(gunParticles, raycastPosition.position, Quaternion.identity);
             SceneTransition.getCircleTransition(SceneManager.GetActiveScene().buildIndex);
+            notDoneShooting = false;
         }
     }
     bool canSeePlayer()
