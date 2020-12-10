@@ -1,7 +1,79 @@
 fileFormatVersion: 2
-guid: 658f30ae5b97fa643b5e8791128bf938
+guid: eff025dc41520e14f8e030e5016738b0
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -5415594491286729677
+    second: Animal Guide Title _0
+  - first:
+      213: 7065485628757992515
+    second: Animal Guide Title _1
+  - first:
+      213: 2817549391038614958
+    second: Animal Guide Title _2
+  - first:
+      213: -6208744415604233759
+    second: Animal Guide Title _3
+  - first:
+      213: 3061109532455981285
+    second: Animal Guide Title _4
+  - first:
+      213: -3277066226510493779
+    second: Animal Guide Title _5
+  - first:
+      213: 8327439891013874671
+    second: Animal Guide Title _6
+  - first:
+      213: 4597256301739689520
+    second: Animal Guide Title _7
+  - first:
+      213: 8925411038648178626
+    second: Animal Guide Title _8
+  - first:
+      213: 1632643558886046037
+    second: Animal Guide Title _9
+  - first:
+      213: -6082413971757928567
+    second: Animal Guide Title _10
+  - first:
+      213: 5190701418003569471
+    second: Animal Guide Title _11
+  - first:
+      213: 7163664344134963020
+    second: Animal Guide Title _12
+  - first:
+      213: 4378403966815155310
+    second: Animal Guide Title _13
+  - first:
+      213: 8582329326864695747
+    second: Animal Guide Title _14
+  - first:
+      213: -490077276212428674
+    second: Animal Guide Title _15
+  - first:
+      213: 730086386102785780
+    second: Animal Guide Title _16
+  - first:
+      213: 1570574492133619518
+    second: Animal Guide Title _17
+  - first:
+      213: 775551168225826292
+    second: Animal Guide Title _18
+  - first:
+      213: -7654130276118970039
+    second: Animal Guide Title _19
+  - first:
+      213: 561699724974203236
+    second: Animal Guide Title _20
+  - first:
+      213: 5832526432733878130
+    second: Animal Guide Title _21
+  - first:
+      213: 911133197625186226
+    second: Animal Guide Title _0
+  - first:
+      213: -7060198696678816505
+    second: Animal Guide Title _1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -31,7 +103,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -40,12 +112,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 128
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -64,7 +136,19 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -73,7 +157,49 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Animal Guide Title _0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b7d38bd0def4ac00800000000000000
+      internalID: 911133197625186226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Animal Guide Title _1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70588c021b2250e90800000000000000
+      internalID: -7060198696678816505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
