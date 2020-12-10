@@ -15,6 +15,7 @@ public class SniperEnemy : MonoBehaviour
     public string initialDirection;
     public GameObject gunParticles;
     private bool notDoneShooting = true;
+    public GameObject UI;
     // Start is called before the first frame update
     void Start()
     {
@@ -50,7 +51,8 @@ public class SniperEnemy : MonoBehaviour
                 zAngle = 0;
             }
             transform.eulerAngles = new Vector3(0, 0, zAngle);
-            if(Mathf.Abs(zAngle - 90) < tolerance)
+            animationChange();
+            if (Mathf.Abs(zAngle - 90) < tolerance)
             {
                 enemyDirection = Vector3.up;
             }
@@ -89,5 +91,37 @@ public class SniperEnemy : MonoBehaviour
         {
             SceneTransition.getCircleTransition(SceneManager.GetActiveScene().buildIndex);
         }
+    }
+    private void animationChange()
+    {
+        float zAngle = transform.eulerAngles.z;
+        Animator anim = UI.GetComponent<Animator>();
+        SpriteRenderer sprite = UI.GetComponent<SpriteRenderer>();
+
+            if (zAngle == 360)
+            {
+                zAngle = 0;
+            }
+            Debug.Log("zAngle: " + zAngle);
+            if (Mathf.Abs(zAngle - 90) < tolerance)
+            {
+                anim.SetTrigger("up");
+                sprite.flipX = false;
+            }
+            else if (Mathf.Abs(zAngle - 180) < tolerance)
+            {
+                anim.SetTrigger("side");
+                sprite.flipX = true;
+            }
+            else if (Mathf.Abs(zAngle - 270) < tolerance)
+            {
+                anim.SetTrigger("down");
+                sprite.flipX = false;
+            }
+            else if (Mathf.Abs(zAngle) < tolerance)
+            {
+                anim.SetTrigger("side");
+                sprite.flipX = false;
+            }
     }
 }

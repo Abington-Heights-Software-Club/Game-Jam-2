@@ -41,7 +41,7 @@ public class SniperAnimationLogic : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    /*void Update()
     {
         if (rotate && (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D)))
         {
@@ -72,5 +72,5 @@ public class SniperAnimationLogic : MonoBehaviour
                 sprite.flipX = false;
             }
         }
-    }
+    }*/
 }

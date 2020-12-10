@@ -8880,6 +8880,11 @@ PrefabInstance:
       propertyPath: DeerMovement
       value: 
       objectReference: {fileID: 2014439505}
+    - target: {fileID: 7486770687114449289, guid: edf22226057aefa418c2e40704a41c7d,
+        type: 3}
+      propertyPath: UI
+      value: 
+      objectReference: {fileID: 1939660448}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edf22226057aefa418c2e40704a41c7d, type: 3}
 --- !u!95 &1727326850 stripped
@@ -9012,6 +9017,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5aaf46e55ca7c6d4f8aa49ee78759dbf, type: 3}
+--- !u!1 &1939660448 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5712738645728322887, guid: edf22226057aefa418c2e40704a41c7d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1587487246}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2014439505 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3517626658628517850, guid: d6a5823ba31c84b48a780b9b43442d7a,

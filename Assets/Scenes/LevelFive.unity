@@ -208,6 +208,11 @@ PrefabInstance:
       propertyPath: DeerMovement
       value: 
       objectReference: {fileID: 2064762631}
+    - target: {fileID: 7486770687114449289, guid: edf22226057aefa418c2e40704a41c7d,
+        type: 3}
+      propertyPath: UI
+      value: 
+      objectReference: {fileID: 1588470469}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edf22226057aefa418c2e40704a41c7d, type: 3}
 --- !u!1001 &200150302
@@ -371,6 +376,11 @@ PrefabInstance:
       propertyPath: rotate
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7486770687114449289, guid: edf22226057aefa418c2e40704a41c7d,
+        type: 3}
+      propertyPath: UI
+      value: 
+      objectReference: {fileID: 2093881172}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edf22226057aefa418c2e40704a41c7d, type: 3}
 --- !u!1001 &644018045
@@ -10502,6 +10512,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13f99f383f37cf44dbe6c6f88fb44e19, type: 3}
+--- !u!1 &1588470469 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5712738645728322887, guid: edf22226057aefa418c2e40704a41c7d,
+    type: 3}
+  m_PrefabInstance: {fileID: 25094946}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2055567196
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10608,4 +10624,10 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4629307092558996781, guid: d6a5823ba31c84b48a780b9b43442d7a,
     type: 3}
   m_PrefabInstance: {fileID: 2055567196}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2093881172 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5712738645728322887, guid: edf22226057aefa418c2e40704a41c7d,
+    type: 3}
+  m_PrefabInstance: {fileID: 636687246}
   m_PrefabAsset: {fileID: 0}
