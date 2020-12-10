@@ -1,0 +1,16 @@
+{
+"companyName": "DefaultCompany",
+"productName": "AHS Beginners Circle Jam #4",
+"productVersion": "0.1",
+"dataUrl": "ANIMAL GUIDE.data.unityweb",
+"wasmCodeUrl": "ANIMAL GUIDE.wasm.code.unityweb",
+"wasmFrameworkUrl": "ANIMAL GUIDE.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.13f1"
+}
